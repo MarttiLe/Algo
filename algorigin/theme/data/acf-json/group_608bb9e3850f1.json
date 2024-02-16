@@ -1,0 +1,148 @@
+{
+    "key": "group_608bb9e3850f1",
+    "title": "Block - Sticky horizontal navigation bar",
+    "fields": [
+        {
+            "key": "field_608bb9e3b1103",
+            "label": "Display this block?",
+            "name": "display_block_sticky_navigation_bar",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_608bb9e3b4e4b",
+            "label": "Sticky navigation bar block options",
+            "name": "block_sticky_navigation_bar",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_608bb9e3b1103",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_608bb9e3ced4b",
+                    "label": "Nav items",
+                    "name": "nav_items",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "Add item",
+                    "sub_fields": [
+                        {
+                            "key": "field_608bb9e3f0a65",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_608bb9e40029e",
+                            "label": "Nav anchor",
+                            "name": "anchor",
+                            "type": "text",
+                            "instructions": "Section hash<br>\r\nUsually its title in slug format ​- lowercase only, words separated by dashes, no spaces or other symbols allowed<br>\r\nMUST correspond and be identical to an actual Nav Anchor of a section on the page",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "#",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_608bbb2b2ddef",
+                    "label": "Responsive point",
+                    "name": "responsive_point",
+                    "type": "number",
+                    "instructions": "Hides the nav menu if screen size is below this number in pixels<br>\r\nDefault is 1024px (tablet breakpoint), adjust only if needed<br>",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 1024,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 768,
+                    "max": 3440,
+                    "step": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1638182937
+}

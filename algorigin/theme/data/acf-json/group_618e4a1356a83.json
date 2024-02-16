@@ -1,0 +1,43 @@
+{
+    "key": "group_618e4a1356a83",
+    "title": "Post type - FAQ item options",
+    "fields": [
+        {
+            "key": "field_618e4a2138b3a",
+            "label": "Answer",
+            "name": "answer",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "faq"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1637250303
+}

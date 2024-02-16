@@ -1,0 +1,140 @@
+{
+    "key": "group_617bfe56e474c",
+    "title": "Block - Hero",
+    "fields": [
+        {
+            "key": "field_617bfe56e7fd3",
+            "label": "Display this block?",
+            "name": "display_block_hero",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_617bfe56ebcd7",
+            "label": "Hero block options",
+            "name": "block_hero",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_617bfe56e7fd3",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_617bfe5702fa2",
+                    "label": "Nav anchor",
+                    "name": "nav_anchor",
+                    "type": "text",
+                    "instructions": "Section hash, used for scroll navigation<br>\r\nUse the section's title in slug format ​- lowercase only, words separated by dashes, no spaces or other symbols allowed",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_617bfe6e2960e",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "H1 title of the page",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_617bfe5711b0d",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_617bfe922960f",
+                    "label": "Button link",
+                    "name": "button",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1635516083
+}

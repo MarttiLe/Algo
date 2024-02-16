@@ -1,0 +1,128 @@
+{
+    "key": "group_618e7c2236643",
+    "title": "Block - FAQs",
+    "fields": [
+        {
+            "key": "field_618e7c2239ab0",
+            "label": "Display this block?",
+            "name": "display_block_faqs",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_618e7c223d721",
+            "label": "FAQ block options",
+            "name": "block_faqs",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_618e7c2239ab0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_618e7c2245379",
+                    "label": "Nav anchor",
+                    "name": "nav_anchor",
+                    "type": "text",
+                    "instructions": "Section hash, used for scroll navigation<br>\r\nUse the section's title in slug format ​- lowercase only, words separated by dashes, no spaces or other symbols allowed",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618e7c2248cba",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618e7c4909b3c",
+                    "label": "FAQ items",
+                    "name": "items",
+                    "type": "post_object",
+                    "instructions": "Select the FAQ items you wish to display. Items will be displayed in accordions.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "faq"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1636727956
+}

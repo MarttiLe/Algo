@@ -1,0 +1,45 @@
+{
+    "key": "group_61d4368044c26",
+    "title": "Newsletter for category",
+    "fields": [
+        {
+            "key": "field_61d436973a90e",
+            "label": "Newsletter subscribe block",
+            "name": "newsletter_subscribe_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_61793483a2fb6"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1641297656
+}

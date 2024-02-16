@@ -1,0 +1,45 @@
+{
+    "key": "group_618917520a26f",
+    "title": "Page - Page options",
+    "fields": [
+        {
+            "key": "field_6189179179b05",
+            "label": "Page heading options",
+            "name": "page_heading_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_6189008f283dc"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1636556323
+}

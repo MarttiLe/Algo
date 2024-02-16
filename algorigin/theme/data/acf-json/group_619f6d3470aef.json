@@ -1,0 +1,150 @@
+{
+    "key": "group_619f6d3470aef",
+    "title": "Page - About page options",
+    "fields": [
+        {
+            "key": "field_619f6d3475306",
+            "label": "Heading options",
+            "name": "heading_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_6189008f283dc"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_619f6d3d19b14",
+            "label": "Sticky navigation bar options",
+            "name": "sticky_navigation_bar_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_608bb9e3850f1"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_619f90f13095d",
+            "label": "Who we are block options",
+            "name": "who_we_are_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_619f879dd6412"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_619f91342f2ca",
+            "label": "Quality block options",
+            "name": "quality_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_619f89d4acc31"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_619f91442f2cb",
+            "label": "Ethics block options",
+            "name": "ethics_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_619f8a95e7f0d"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_619f91671ad86",
+            "label": "Responsibility block options",
+            "name": "responsibility_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_619f907003a0b"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-about.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1637847436
+}

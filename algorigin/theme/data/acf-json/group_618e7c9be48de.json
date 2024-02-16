@@ -1,0 +1,102 @@
+{
+    "key": "group_618e7c9be48de",
+    "title": "Product options",
+    "fields": [
+        {
+            "key": "field_619d07bc8e63a",
+            "label": "General product options",
+            "name": "general_options",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_619d084c8e63b",
+                    "label": "Amount",
+                    "name": "amount",
+                    "type": "text",
+                    "instructions": "Amount and unit of this product.<br>\r\nE.g: 100 tablets",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_6192630615b01",
+            "label": "Additional info options",
+            "name": "additional_info_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_619263e7c1959"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_618e7ca0aa0ae",
+            "label": "FAQ options",
+            "name": "faq_options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_618e7c2236643"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1641923600
+}

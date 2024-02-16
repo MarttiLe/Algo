@@ -1,0 +1,171 @@
+{
+    "key": "group_611cb9c311dfc",
+    "title": "Page - Front page options",
+    "fields": [
+        {
+            "key": "field_61265ce7eeb84",
+            "label": "Hero block",
+            "name": "frontpage_hero_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_617bfe56e474c"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_611e576a827b1",
+            "label": "Story block",
+            "name": "frontpage_story_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_617bf729981c9"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_6127a28df36b4",
+            "label": "Values block",
+            "name": "frontpage_values_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_617bdf85945ad"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_612ca3b8dad2e",
+            "label": "Shop preview block",
+            "name": "frontpage_shop_preview_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_617fd14ac62a0"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_611cba0181244",
+            "label": "Testimonials block",
+            "name": "frontpage_testimonials_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_60783964a5ad3"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_6123ac8eab6ae",
+            "label": "Newsletter subscribe block",
+            "name": "frontpage_newsletter_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_61793483a2fb6"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        },
+        {
+            "key": "field_611d16fd2f376",
+            "label": "Blog preview block",
+            "name": "frontpage_blog_preview_block",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_611d1570c57a5"
+            ],
+            "display": "group",
+            "layout": "row",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1639043658
+}

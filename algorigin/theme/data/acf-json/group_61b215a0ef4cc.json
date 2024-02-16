@@ -1,0 +1,189 @@
+{
+    "key": "group_61b215a0ef4cc",
+    "title": "Block - Related posts",
+    "fields": [
+        {
+            "key": "field_61b215a106a91",
+            "label": "Display this block?",
+            "name": "display_block_related_posts",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_61b215a10a5b7",
+            "label": "Related posts block options",
+            "name": "block_related_posts",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61b215a106a91",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_61b215a115e05",
+                    "label": "Nav anchor",
+                    "name": "nav_anchor",
+                    "type": "text",
+                    "instructions": "Section hash, used for scroll navigation<br>\r\nUse the section's title in slug format ​- lowercase only, words separated by dashes, no spaces or other symbols allowed",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b215a119798",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "Optional override. Defaults to \"Related posts\" if left empty.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b215a11d1aa",
+                    "label": "Display posts",
+                    "name": "posts_display_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "manual": "Select manually",
+                        "newest": "Newest",
+                        "random": "Random"
+                    },
+                    "default_value": "random",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_61b215a120d3d",
+                    "label": "Amount of posts",
+                    "name": "amount_of_posts",
+                    "type": "number",
+                    "instructions": "The number of posts that should be displayed",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_61b215a11d1aa",
+                                "operator": "!=",
+                                "value": "manual"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": 3,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": 9,
+                    "step": 1
+                },
+                {
+                    "key": "field_61b215a1248c5",
+                    "label": "Posts to display",
+                    "name": "posts",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_61b215a11d1aa",
+                                "operator": "==",
+                                "value": "manual"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": "",
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "return_format": "id",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1639062586
+}

@@ -1,0 +1,226 @@
+{
+    "key": "group_6189008f283dc",
+    "title": "Block - Page heading",
+    "fields": [
+        {
+            "key": "field_6189008f2bf03",
+            "label": "Display this block?",
+            "name": "display_block_page_heading",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6189008f2fa89",
+            "label": "Page heading options",
+            "name": "block_page_heading",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6189008f2bf03",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_6189008f3ebf6",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "Optional override for the H1 page title.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618902469c41c",
+                    "label": "Subtitle",
+                    "name": "subtitle",
+                    "type": "textarea",
+                    "instructions": "Short lead text for the page heading.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_6189101d8a0a3",
+                    "label": "Hide breadcrumb",
+                    "name": "hide_breadcrumb",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 1,
+                    "ui_on_text": "Yes",
+                    "ui_off_text": "No"
+                },
+                {
+                    "key": "field_618902599c41d",
+                    "label": "Color scheme",
+                    "name": "color_scheme",
+                    "type": "select",
+                    "instructions": "Colors of the page heading.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "light": "Light",
+                        "dark": "Dark",
+                        "neutral": "Neutral",
+                        "custom": "Custom"
+                    },
+                    "default_value": "dark",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_618902939c41e",
+                    "label": "Colors",
+                    "name": "custom_colors",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_618902599c41d",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "sub_fields": [
+                        {
+                            "key": "field_618902a69c41f",
+                            "label": "Background color",
+                            "name": "background",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#263938"
+                        },
+                        {
+                            "key": "field_618902c69c420",
+                            "label": "Text color",
+                            "name": "text",
+                            "type": "color_picker",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "#ffffff"
+                        }
+                    ]
+                },
+                {
+                    "key": "field_6189008f42841",
+                    "label": "Background image",
+                    "name": "image",
+                    "type": "file",
+                    "instructions": "Optional background image for the page heading.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-front-page.php"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1636634531
+}

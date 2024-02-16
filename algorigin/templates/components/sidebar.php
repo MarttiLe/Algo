@@ -1,0 +1,1 @@
+<?php // This exists to keep the WP theme check happy ?>

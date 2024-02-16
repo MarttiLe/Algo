@@ -1,0 +1,86 @@
+{
+    "key": "group_619e436ae7e07",
+    "title": "Post type - Blog post options",
+    "fields": [
+        {
+            "key": "field_619e4d0091a26",
+            "label": "Featured products title",
+            "name": "featured_products_title",
+            "type": "text",
+            "instructions": "Optional title override for the featured products sidebar. Defaults to \"Products featured in this article\" if left empty.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_619e4392f6092",
+            "label": "Featured products",
+            "name": "featured_products",
+            "type": "post_object",
+            "instructions": "Add up to 3 products that will be displayed next to the blog post.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "product"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_61b2171183244",
+            "label": "Related posts",
+            "name": "related_posts",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "field_61b215a10a5b7"
+            ],
+            "display": "group",
+            "layout": "block",
+            "prefix_label": 0,
+            "prefix_name": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1639061315
+}
